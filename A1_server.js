@@ -7,7 +7,7 @@ var fs= require('fs');
 
 function onRequest(req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
-  fs.readFile('./P_server.html', null, function(error, data){
+  fs.readFile('./A1_server.html', null, function(error, data){
     if (error){
       res.writeHead(404);
       res.write('file not found!');
